@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "framework": null,
+    "framework": "other",
     "functions": {
         "api/index.php": { "runtime": "vercel-php@0.6.0" }
     },
@@ -9,7 +9,7 @@
         { "src": "/(.*)", "dest": "/api/index.php" }
     ],
     "public": true,
-    "buildCommand": "vite build",
+    "buildCommand": "composer install && php artisan config:cache && php artisan route:cache && php artisan view:cache",
     "outputDirectory": "public",
     "env": {
         "APP_ENV": "production",
