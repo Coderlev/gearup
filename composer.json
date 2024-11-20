@@ -5,9 +5,13 @@
     "keywords": ["laravel", "framework"],
     "license": "MIT",
     "require": {
-        "php": "^8.2",
-        "laravel/framework": "^11.9",
-        "laravel/tinker": "^2.9"
+    "php": "^8.2",
+    "laravel/framework": "^11.9",
+    "laravel/tinker": "^2.9",
+    "guzzlehttp/guzzle": "^7.0",       
+    "fruitcake/laravel-cors": "^2.2", 
+    "spatie/laravel-permission": "^6.0",
+    "vercel/laravel-bridge": "^0.6.0" 
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
